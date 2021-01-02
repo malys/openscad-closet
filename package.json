@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "ts-node": "npx ts-node src/index.ts src/index.ts",
+    "dev": "npx nodemon --watch src --ext ts --exec 'npm run ts-node'",
+    "render": "openscad dist/output.scad -o dist/output.stl",
+    "view": "openscad dist/output.scad"
+  },
+  "dependencies": {
+    "scad-js": "^0.2.3"
+  },
+  "name": "openscad-closet",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/malys/openscad-closet.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.19",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
